@@ -56,6 +56,14 @@ p <- ggplot(plot_data, aes(x = days)) +
 
 print(p)
 
+ggsave(
+  filename = "outputs/diameter_growth_plot.png",
+  plot = p,
+  width = 8,
+  height = 5,
+  dpi = 300
+)
+
 # -----------------------------
 # 5. RMSE calculation
 # -----------------------------
